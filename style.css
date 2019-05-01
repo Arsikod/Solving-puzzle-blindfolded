@@ -21,6 +21,10 @@ header {
     margin-bottom: 2rem;
 }
 
+h3 {
+    font-family: 'Jura', sans-serif;
+}
+
 p {
     font-family: 'Jura', sans-serif;
 }
@@ -32,7 +36,7 @@ li {
 
 li a {
     color: var(--bright-txt);
-
+    display: block;
 }
 
 /* разделение страницы на боковой navbar и содержание */
@@ -42,15 +46,17 @@ li a {
 }
 
 .container {
-  flex: 2;
+    flex: 1;
+    margin-left: 20%;
 }
 
 /* Navbar */
 #navbar {
+height: 100%;
+width: 20%;
 position: fixed;
 display: flex;
 flex-direction: column;
-margin-top: 5rem;
 flex: 1;
 background: #fff;
 }
@@ -64,6 +70,12 @@ ul li {
     padding: 1rem 0.8rem;
     font-weight: 600;
     color: var(--dark-txt-clr);
+    font-size: 1.3rem;
+}
+
+ul li:hover {
+    background: var(--dark-txt-clr);
+    color: var(--bright-txt-clr);
 }
 
 /* Sections */
@@ -81,4 +93,18 @@ ul li {
     font-size: 1.5rem;
     line-height: 1.5;
 }
+
+
+#what {
+    background: linear-gradient(rgba(170, 85, 85, 0.8), rgba(170, 85, 85, 0.8)), url('img/what.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--bright-txt-clr);
+    font-size: 1.5rem;
+}
+
+
 
